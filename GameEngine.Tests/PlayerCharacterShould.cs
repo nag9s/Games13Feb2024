@@ -15,7 +15,7 @@ namespace GameEngine.Tests
             var sut = new PlayerCharacter();
             sut.FirstName = "11feb";
             sut.LastName = "2024";
-            Assert.Equal("11feb2024",sut.FullName);
+            Assert.Equal("11feb 2024",sut.FullName);
         }
     }
 }
