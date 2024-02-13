@@ -25,7 +25,7 @@ namespace GameEngine.Tests
         [InlineData(101, 1)]
         public void TakeDamage(int damage, int expectedHealth)
         {
-            var sut = new PlayerCharacter();
+            var sut = new PlayerCharacter()
             sut.TakeDamage(damage);
 
             Assert.Equal(expectedHealth, sut.Health);
